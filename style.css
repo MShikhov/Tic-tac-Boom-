@@ -1,0 +1,38 @@
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-image: url('https://img3.akspic.ru/image/143501-sinij-nebo-minimalizm-illustracia-rozovyj-1920x1200.jpg');
+    background-size: cover;
+}
+
+.timer-output{
+    width: 200px;
+    background: #222;
+    color: darkred;
+    padding: 16px 8px;
+    font-size: 64px;
+    text-align: center;
+    line-height: 1;
+    user-select: none;
+}
+
+.timer-output-wrapper{
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 12px;
+}
+h1{
+    margin: auto;
+}
+.players{
+    margin: auto;
+}
+
+.time{
+    margin: auto;
+}
+.container{
+    margin-top: 50px;
+}

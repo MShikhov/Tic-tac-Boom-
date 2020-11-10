@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТикТакБум</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col col-md-8 offset-md-2">
+            <div class="row">
+                <h1>Tic-Tac-Boom! 
+                    <img src="time-bomb_38785.png" width="50px" height="auto">
+
+                </h1>
+            </div>
+            <div class="row">
+                <span class="alert alert-primary players" id="gameStatusField">Игра идёт</span>
+                <span class="alert alert-primary players" >Выберите число игроков<select id="players">
+                    <option id="player1">1</option>
+                    <option id="player2">2</option>
+                </select></span>
+                <span class="alert alert-primary time" >Выберите время игры<select id="time">
+                    <option  id="time1">30</option>
+                    <option  id="time2">60</option>
+                   
+                </select></span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="timer-output-wrapper">
+                        <div class="timer-output" id="timerField">
+                            00:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3 id="questionField"></h3>
+            </div>
+            <div class="row">
+                <div id="start" class="btn btn-info form-control text-center">Начать</div>
+            </div>
+            <div class="row">
+                <div id="answer1" class="btn btn-success form-control text-center answer"></div>
+            </div>
+            <div class="row">
+                <div id="answer2" class="btn btn-primary form-control text-center answer"></div>
+            </div>
+            <div class="row">
+                <div id="retry" class="btn  btn-danger form-control text-center" onclick="location.reload()">Заново</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="utils.js"></script>
+<script src="tikTakBoom.js"></script>
+<script src="tikTakBoomTasks.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
